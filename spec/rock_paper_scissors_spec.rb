@@ -26,8 +26,16 @@ describe('#rock_paper_scissors') do
     game = RPS.new()
     expect(game.wins?("paper", "scissors")).to(eq(false))
   end
-  it("returns 'Play again' if player1 and player2 have the same result of paper") do
+  it("returns 'Play again' if player1 and player2 have the same result") do
     game = RPS.new()
     expect(game.wins?("paper", "paper")).to(eq("Play again"))
+  end
+  it("returns 'Play again' if player1 and player2 have the same result") do
+    game = RPS.new()
+    expect(game.wins?("scissors", "scissors")).to(eq("Play again"))
+  end
+  it("returns 'Play again' if player1 and player2 have the same result") do
+    game = RPS.new()
+    expect(game.wins?("rock", "rock")).to(eq("Play again"))
   end
 end
