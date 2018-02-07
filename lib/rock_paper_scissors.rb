@@ -1,4 +1,4 @@
-class RPS
+class Player
   def initialize(choice)
     @choice = choice
   end
@@ -16,19 +16,19 @@ class RPS
   end
 end
 
+  def plays()
+    puts "Player 1: Rock, paper, scissors?"
+    outcome_player1 = gets.chomp
+    puts "Player 2: Rock, paper, scissors?"
+    outcome_player2 = gets.chomp
 
-# puts "Player 1: Rock, paper, scissors?"
-# outcome_player1 = gets.chomp
-# puts "Player 2: Rock, paper, scissors?"
-# outcome_player2 = gets.chomp
-#
-#
-#
-# if "#{outcome_player1}" ===
-#   puts "Player 1 Wins"
-#
-#
-#  "#{outcome_player2}")
+
+
+  if "#{outcome_player1}" ===
+    puts "Player 1 Wins"
+
+
+   "#{outcome_player2}")
 
 # def wins?(player1, player2)
 #   if (player1 == "rock") && (player2 == "scissors")

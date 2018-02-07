@@ -4,23 +4,23 @@ require('pry')
 
 describe('#rock_paper_scissors') do
   it("returns true if player one wins") do
-    player1 = RPS.new("rock")
-    player2 = RPS.new("scissors")
+    player1 = Player.new("rock")
+    player2 = Player.new("scissors")
     expect(player1.wins?(player2.choice)).to(eq(true))
   end
   it("returns true if player one wins") do
-    player1 = RPS.new("scissors")
-    player2 = RPS.new("paper")
+    player1 = Player.new("scissors")
+    player2 = Player.new("paper")
     expect(player1.wins?(player2.choice)).to(eq(true))
   end
   it("returns true if player one wins") do
-    player1 = RPS.new("paper")
-    player2 = RPS.new("rock")
+    player1 = Player.new("paper")
+    player2 = Player.new("rock")
     expect(player1.wins?(player2.choice)).to(eq(true))
   end
   it("returns false if player one loses") do
-    player1 = RPS.new("rock")
-    player2 = RPS.new("paper")
+    player1 = Player.new("rock")
+    player2 = Player.new("paper")
     expect(player1.wins?(player2.choice)).to(eq(false))
   end
 end
