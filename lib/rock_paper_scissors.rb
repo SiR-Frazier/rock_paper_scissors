@@ -8,6 +8,14 @@ class RPS
       true
     elsif (player1 == "paper") && (player2 == "rock")
       true
+    elsif (player1 == "scissors") && (player2 == "rock")
+      false
+    elsif (player1 == "rock") && (player2 == "paper")
+      false
+    elsif (player1 == "paper") && (player2 == "scissors")
+      false
+    else (player1 == "paper") && (player2 == "paper")
+      "Play again"
     end
   end
 end
